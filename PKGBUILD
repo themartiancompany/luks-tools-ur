@@ -31,6 +31,7 @@ license=(
 )
 depends=(
   'cryptsetup'
+  'libcrash-bash'
   'util-linux'
 )
 makedepends=(

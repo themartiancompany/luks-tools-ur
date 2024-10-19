@@ -14,3 +14,23 @@ pkgbase = luks-tools
 	sha256sums = d22c81413fc912ab468d98861334effee58fa9a6e7b70692733008924a39e45f
 
 pkgname = luks-tools
+pkgbase = luks-tools
+	pkgdesc = A collection of LUKS related scripts.
+	pkgver = 0.0.0.0.0.1.1.1
+	pkgrel = 1
+	url = https://github.com/themartiancompany/luks-tools
+	arch = any
+	groups = hip
+	license = AGPL3
+	checkdepends = shellcheck
+	depends = cryptsetup
+	depends = libcrash-bash
+	depends = util-linux
+	optdepends = python-pygments: colorized output
+	provides = mkluks=0.0.0.0.0.1.1.1
+	source = luks-tools-0.0.0.0.0.1.1.1.tar.gz::https://github.com/themartiancompany/luks-tools/archive/refs/tags/0.0.0.0.0.1.1.1.tar.gz
+	validpgpkeys = 97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9
+	validpgpkeys = DD6732B02E6C88E9E27E2E0D5FC6652B9D9A6C01
+	sha256sums = 963b1db06422e211a38563a7f485cfa281262e0b3320273aa35d6abe2e07fc74
+
+pkgname = luks-tools
