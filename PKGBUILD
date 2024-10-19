@@ -8,7 +8,8 @@ _local=false
 _py="python"
 _py2="${_py}2"
 _proj="hip"
-pkgname=luks-tools
+_pkg="luks"
+pkgname="${_pkg}-tools"
 pkgver=0.0.0.0.0.1.1
 pkgrel=1
 _pkgdesc=(
@@ -46,6 +47,9 @@ optdepends=(
 )
 groups=(
  "${_proj}"
+)
+provides=(
+  "mk${_pkg}=${pkgver}"
 )
 _branch="master"
 _commit="84fb4c00f9569e4e182dca872563c35c7257d8c6"
