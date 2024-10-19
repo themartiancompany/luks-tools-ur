@@ -29,10 +29,10 @@ license=(
   AGPL3
 )
 depends=(
-  cryptsetup
+  'cryptsetup'
+  'util-linux'
 )
 makedepends=(
-  # git
 )
 [[ "${_git}" == true ]] && \
   makedepends+=(
@@ -42,8 +42,7 @@ checkdepends=(
   shellcheck
 )
 optdepends=(
-  "python-pygments: colorized output"
-  "python2-pygments: colorized output"
+  "${_py}-pygments: colorized output"
 )
 groups=(
  "${_proj}"
