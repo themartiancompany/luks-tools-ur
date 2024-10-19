@@ -10,7 +10,7 @@ _py2="${_py}2"
 _proj="hip"
 _pkg="luks"
 pkgname="${_pkg}-tools"
-pkgver=0.0.0.0.0.1.1
+pkgver=0.0.0.0.0.1.1.1
 pkgrel=1
 _pkgdesc=(
   "A collection of LUKS"
@@ -73,8 +73,13 @@ sha256sums=()
       "${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
     ) && \
     sha256sums+=(
-      "d22c81413fc912ab468d98861334effee58fa9a6e7b70692733008924a39e45f"
+      "963b1db06422e211a38563a7f485cfa281262e0b3320273aa35d6abe2e07fc74"
     )
+validpgpkeys=(
+  # Truocolo <truocolo@aol.com>
+  '97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9'
+  'DD6732B02E6C88E9E27E2E0D5FC6652B9D9A6C01'
+)
 
 check() {
   ls "${srcdir}"
